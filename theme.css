@@ -1,0 +1,53 @@
+/*الوان خطوط وسوالف*/
+
+:root {
+
+  /* ألوان الخلفية */
+  --void-deep:    #000000;
+  --void-soft:    #080600;
+  --void-card:    #0d0a00;
+  --void-glass:   rgba(255,200,50,0.04);
+  --void-border:  rgba(255,190,30,0.12);
+
+  /*uwu */
+  --aqua:         #e89623;
+  --aqua-dim:     #c8962a;
+  --aqua-glow:    rgba(245,200,66,0.18);
+  --aqua-subtle:  rgba(245,200,66,0.07);
+
+  /*وجوده كعدمه- */
+  --navy:         #1a2a6c;
+  --navy-bright:  #2e4bbd;
+  --navy-glow:    rgba(46,75,189,0.20);
+  --navy-subtle:  rgba(46,75,189,0.08);
+
+  /* نصصصص */
+  --text-main:    #fff8e7;
+  --text-muted:   #b8a97a;
+  --text-faint:   #5a4e30;
+
+  --radius-sm:    8px;
+  --radius-md:    15px;
+  --radius-lg:    20px;
+  --radius-pill:  999px;
+
+  --gap-sm:       10px;
+  --gap-md:       20px;
+  --gap-lg:       30px;
+  --gap-xl:       40px;
+
+  --header-h:     55px;
+  --header-h-mob: 50px;
+
+  --sidebar-w:    220px;
+ 
+  --font-main:    'Amiri', 'Georgia', serif;
+  --font-size-sm: 13px;
+  --font-size-md: 15px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+
+  --trans-fast:   0.2s ease;
+  --trans-med:    0.3s ease;
+  --trans-slow:   1s ease;
+}

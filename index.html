@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرئيسية</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+
+
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="owo.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script src="shared.js" defer></script>
+  <script src="uwu.js" defer></script>
+</head>
+
+<body>
+   <div id="custom-cursor">
+    <img src="aaa/mou.gif" alt="">
+  </div>
+    <canvas id="bg-canvas"></canvas>
+  <header class="main-header">
+    <div class="header-right">
+
+      
+      <div class="lang-wrapper">
+        <button class="lang-btn"> Lang</button>
+        <div class="lang-dropdown">
+          <div class="lang-item" data-lang="jp" style="background-image:url('jp.jpg')"><img src="aaa/Sho.gif"><span>日本語</span></div>
+          <div class="lang-item" data-lang="es" style="background-image:url('es.jpg')"><img src="aaa/Cho.gif"><span>Español</span></div>
+          <div class="lang-item" data-lang="ru" style="background-image:url('ru.jpg')"><img src="aaa/jam.gif"><span>Русский</span></div>
+          <div class="lang-item" data-lang="de" style="background-image:url('de.jpg')"><img src="aaa/Aca.gif"><span>Deutsch</span></div>
+          <div class="lang-item" data-lang="ar" style="background-image:url('ar.jpg')"><img src="aaa/lam.gif"><span>العربية</span></div>
+          <div class="lang-item" data-lang="gr" style="background-image:url('gr.jpg')"><img src="aaa/Eyo.gif"><span>Ελληνικά</span></div>
+          <div class="lang-item" data-lang="cn" style="background-image:url('cn.jpg')"><img src="aaa/Li.gif"><span>中文</span></div>
+        </div>
+      </div>
+
+      <a href="https://linktr.ee/leunever" target="_blank" class="linktree-btn"> Linktree</a>
+    </div>
+  </header>
+
+  <div id="tsparticles"></div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleMenu()">✕</div>
+    <h2>^-^</h2>
+    <a href="index.html" data-i18n="nav_home"> رئيسية</a>
+    <a href="pro.html"   data-i18n="nav_projects"> مشاريع</a>
+    <a href="book.html"  data-i18n="nav_books"> كتب</a>
+    <a href="yorumugen.html" data-i18n="nav_yoru"> دجى الازل</a>
+  </div>
+
+
+<div class="main">
+    <div class="page">
+
+    <section class="hero-box">
+
+      <div class="top-row">
+
+         
+          <div class="box text-slider" id="textSlider">
+            <div class="text active" data-i18n="hero_1">المحتوى غير متاح</div>
+            <div class="text" data-i18n="hero_2">error 404</div>
+            <div class="text" data-i18n="hero_3">...</div>
+          </div>
+
+          <div class="box slider" id="imageSlider">
+            <img src="aaa/Whno.gif" class="active" alt="">
+            <img src="aaa/Whno.gif" alt="">
+            <img src="aaa/Whno.gif" alt="">
+          </div>
+
+        </div>
+
+        <div class="middle-row">
+          <div class="box center-box">
+            <div class="time-overlay">
+              <h2 id="time"></h2>
+              <p id="date"></p>
+            </div>
+          </div>
+        </div>
+
+  <div class="bottom-row">
+
+          <div class="box quote-box">
+            <p id="quoteBox"></p>
+          </div>
+
+          <div class="box secret-box">
+            <p style="color:var(--text-muted); font-size:13px; margin-bottom:8px;" data-i18n="secret_label">hmm..</p>
+            <div class="secret-input-row">
+              <input
+                id="secretLetter"
+                class="secret-letter"
+                type="text"
+                maxlength="1"
+                placeholder="A"
+              >
+   <input class="secret-digit" type="text" inputmode="numeric" maxlength="1" placeholder="0">
+              <input class="secret-digit" type="text" inputmode="numeric" maxlength="1" placeholder="0">
+              <input class="secret-digit" type="text" inputmode="numeric" maxlength="1" placeholder="0">
+              <input class="secret-digit" type="text" inputmode="numeric" maxlength="1" placeholder="0">
+
+              <button class="secret-submit" id="secretSubmit">✓</button>
+            </div>
+            <p class="secret-result" id="secretResult"></p>
+          </div>
+
+          <div class="box gif-box">
+            <img src="aaa/Whno.gif" alt="gif">
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="secret-modal" id="secretModal">
+        <div class="secret-modal-inner">
+          <span class="close-modal" id="closeModal">✕</span>
+          <h3 style="color:var(--aqua); margin-bottom:10px;">!</h3>
+          <div id="secretContent"></div>
+        </div>
+      </div>
+
+      <section class="parallax-wrap hero">
+        <div class="parallax-bg" style="background-image:url('aaa/wood.jpg')"></div>
+        <div class="parallax-content overlay-box">
+          <div id="latest-video">
+            <p style="color:var(--text-muted); text-align:center;" data-i18n="yt_loading"> جاري تحميل آخر مقطع...</p>
+          </div>
+        </div>
+      </section>
+
+    
+
+
+
+
+      <section class="split-section">
+        <div class="split-block" id="switchBlock">
+
+          <button class="switch-btn" id="switchBtn" data-i18n="switch_btn">⇄ قلّب</button>
+
+   <div class="switch-state state-a">
+            <div class="switch-image" style="background-image: url('aaa/Whno.gif')"></div>
+            <div class="switch-text">
+              <h2 data-i18n="split_h2_a">...</h2>
+              <p data-i18n="split_p_a">...</p>
+            </div>
+          </div>
+
+          <div class="switch-state state-b" style="display:none">
+            <div class="switch-text">
+              <h2 data-i18n="split_h2_b">...</h2>
+              <p data-i18n="split_p_b">احب الليل وسهرات على شاطي البحر هادي اذا غابت عيون الناس نجي للموعد الحساس.</p>
+            </div>
+            <div class="switch-image" style="background-image: url('aaa/Whno.gif')"></div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script>
+    fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=UC-dHm0N7jCQ0e0lnAMVh3KQ")
+      .then(res => res.json())
+      .then(data => {
+        const videoId = data.items[0].link.split("v=")[1];
+        document.getElementById("latest-video").innerHTML = `
+          <iframe
+            width="100%" height="400"
+            src="https://www.youtube.com/embed/${videoId}"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="border-radius:12px;">
+          </iframe>`;
+      })
+      .catch(() => {
+        document.getElementById("latest-video").innerHTML =
+          '<p style="color:var(--text-muted);text-align:center;">تعذّر تحميل المقطع</p>';
+      });
+  </script>
+
+</body>
+</html>

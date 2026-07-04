@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كتب</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpeg">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="owo.css">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script src="shared.js" defer></script>
+  <script src="uwu.js" defer></script>
+</head>
+
+<body>
+  <div id="custom-cursor">
+    <img src="aaa/mou.gif" alt="">
+  </div>
+
+  <canvas id="bg-canvas"></canvas>
+
+
+  <header class="main-header">
+    <div class="header-right">
+      <div class="lang-wrapper">
+        <button class="lang-btn"> uwu</button>
+        <div class="lang-dropdown">
+           <div class="lang-item" data-lang="jp" style="background-image:url('jp.jpg')"><img src="aaa/Sho.gif"><span>日本語</span></div>
+          <div class="lang-item" data-lang="es" style="background-image:url('es.jpg')"><img src="aaa/Cho.gif"><span>Español</span></div>
+          <div class="lang-item" data-lang="ru" style="background-image:url('ru.jpg')"><img src="aaa/jam.gif"><span>Русский</span></div>
+          <div class="lang-item" data-lang="de" style="background-image:url('de.jpg')"><img src="aaa/Aca.gif"><span>Deutsch</span></div>
+          <div class="lang-item" data-lang="ar" style="background-image:url('ar.jpg')"><img src="aaa/lam.gif"><span>العربية</span></div>
+          <div class="lang-item" data-lang="gr" style="background-image:url('gr.jpg')"><img src="aaa/Eyo.gif"><span>Ελληνικά</span></div>
+          <div class="lang-item" data-lang="cn" style="background-image:url('cn.jpg')"><img src="aaa/Li.gif"><span>中文</span></div>
+        </div>
+      </div>
+      <a href="https://linktr.ee/leunever" target="_blank" class="linktree-btn"> Linktree</a>
+    </div>
+  </header>
+
+  <div id="tsparticles"></div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleMenu()">✕</div>
+    <h2>^-^</h2>
+    <a href="index.html" data-i18n="nav_home"> رئيسية</a>
+    <a href="pro.html"   data-i18n="nav_projects"> مشاريع</a>
+    <a href="book.html"  data-i18n="nav_books">كتب</a>
+    <a href="yorumugen.html" data-i18n="nav_yoru">دجى الازل</a>
+  </div>
+
+  
+  <div class="shelf-section">
+
+    <div class="shelf-label" data-i18n="books_shelf1">كتب </div>
+    <div class="shelf-row" id="sciRow">
+
+      <div class="book"
+           data-title="المندملين"
+           data-desc="غير متاح"
+           data-img="aaa/Whno.gif">
+        <img src="aaa/Whno.gif" alt="">
+      </div>
+
+      <div class="book"
+           data-title="حقيقة واحدة"
+           data-desc="غير متاح"
+           data-img="aaa/Whno.gif">
+        <img src="aaa/200.gif" alt="">
+      </div>
+    </div>
+
+    <div class="shelf-label" data-i18n="books_shelf2">روايات\مانجا</div>
+    <div class="shelf-row" id="mangaRow">
+
+      <div class="book"
+           data-title="..."
+           data-desc="..."
+           data-img="aaa/Whno.gif">
+        <img src="aaa/200.gif" alt="">
+      </div>
+
+      <div class="book"
+           data-title="..."
+           data-desc="..."
+           data-img="aaa/Whno.gif">
+        <img src="aaa/Whno.gif" alt="">
+      </div>
+
+      <div class="book"
+           data-title="..."
+           data-desc="..."
+           data-img="aaa/Whno.gif">
+        <img src="aaa/200.gif" alt="">
+      </div>
+
+     
+    </div>
+
+  </div>
+
+  
+  <div class="book-modal-overlay" id="bookModalOverlay">
+    <div class="book-modal">
+
+      <button class="book-modal-close" id="closePanel">✕</button>
+
+    <div class="book-modal-left">
+        <img id="panelImg" class="book-modal-cover" src="" alt="">
+        <div class="book-modal-tags" id="panelTags">
+          <span class="book-tag">كتاب</span>
+        </div>
+      </div>
+
+      <div class="book-modal-right">
+        <h2 id="panelTitle" class="book-modal-title"></h2>
+        <p  id="panelDesc" class="book-modal-desc"></p>
+        <div class="book-modal-downloads">
+          <a href="#" class="book-dl-btn"> PDF – </a>
+          <a href="#" class="book-dl-btn"> PDF – </a>
+          <a href="#" class="book-dl-btn"> PDF – </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
